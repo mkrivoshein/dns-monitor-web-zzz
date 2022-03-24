@@ -40,17 +40,3 @@ export default defineConfig({
 //     },
 //   }
 // }
-
-module.exports = {
-  devServer: {
-    // proxy: 'http://192.168.1.186:8001'
-      '/dns': {
-        target: 'http://192.168.1.186:8001',
-        // changeOrigin: true,
-        // rewrite: (path) => path.replace(/^\/api/, '')
-        // pathRewrite: {
-        //   '^/services/todoService': '/'
-        // }
-    }
-  }
-}
